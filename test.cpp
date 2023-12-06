@@ -54,7 +54,7 @@ double IK(double L[], double xt[], double Rt[],double psi, double theta[]){
     As[2][1] = u_sw[0]*r[1][1] - u_sw[1]*r[0][1];
     As[2][2] = u_sw[0]*r[1][2] - u_sw[1]*r[0][1];
 
-    Bs[0][0] = -1*u_sw[0]*u_sw[1]*r[1][0] - u_sw[2]*u_sw[0]*r[1][0] + r[0][0]*( u_sw[2]*u_sw[2] + u_sw[1]*u_sw[1] );
+    Bs[0][0] = -1*u_sw[0]*u_sw[1]*r[1][0] - u_sw[2]*u_sw[0]*r[2][0] + r[0][0]*( u_sw[2]*u_sw[2] + u_sw[1]*u_sw[1] );
     Bs[0][1] = -1*u_sw[0]*u_sw[2]*r[2][1] - u_sw[1]*u_sw[0]*r[1][1] + r[0][1]*( u_sw[2]*u_sw[2] + u_sw[1]*u_sw[1] );
     Bs[1][0] = -1*u_sw[2]*u_sw[1]*r[2][0] - u_sw[1]*u_sw[0]*r[0][0] + r[1][0]*( u_sw[2]*u_sw[2] + u_sw[1]*u_sw[1] );
     Bs[1][1] = -1*u_sw[1]*u_sw[2]*r[2][1] - u_sw[1]*u_sw[0]*r[0][1] + r[1][1]*( u_sw[2]*u_sw[2] + u_sw[1]*u_sw[1] );
